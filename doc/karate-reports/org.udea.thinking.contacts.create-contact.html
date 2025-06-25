@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.identify("3eeab892-fcbd-498f-957d-fa87612d15df",{name:"runner"});
+    posthog.identify("73e6969f-1a1c-4136-806d-dd0bfbb6b21a",{name:"runner"});
     posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
   }
 });
@@ -50,7 +50,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-06-25 04:45:02 PM</div>
+    <div>2025-06-25 04:48:24 PM</div>
   </div>
 </div>
 
@@ -85,7 +85,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>409</span>
+              <span>ms:</span>&nbsp;<span>683</span>
             </div>
           </div>
           <div class="step-row">
@@ -276,7 +276,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def faker = new Faker()</span>
       </div>
     </div>
-    <div class="time-cell passed">29</div>
+    <div class="time-cell passed">26</div>
   </div>
 
    
@@ -304,7 +304,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomEmail = faker.internet().emailAddress()</span>
       </div>
     </div>
-    <div class="time-cell passed">138</div>
+    <div class="time-cell passed">144</div>
   </div>
 
    
@@ -456,7 +456,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">59</div>
+    <div class="time-cell passed">130</div>
   </div>
 
    
@@ -465,32 +465,32 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">16:45:01.825 request:
+  <div class="preformatted" data-parent="0.27">16:48:23.642 request:
 1 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users
 1 &gt; Accept: application/json
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 106
+1 &gt; Content-Length: 101
 1 &gt; Host: thinking-tester-contact-list.herokuapp.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;charley.cormier@hotmail.com&quot;,&quot;password&quot;:&quot;password123&quot;}
+{&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;levi.gerhold@yahoo.com&quot;,&quot;password&quot;:&quot;password123&quot;}
 
-16:45:01.882 response time in milliseconds: 57
+16:48:23.769 response time in milliseconds: 126
 1 &lt; 201
 1 &lt; Server: Cowboy
-1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869901&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=ngBIflyjNNSwucAReI1%2FQWxpe58nj2DJPiYo8Jl36AA%3D&quot;}]}
-1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869901&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=ngBIflyjNNSwucAReI1%2FQWxpe58nj2DJPiYo8Jl36AA%3D
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750870103&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=pqcLrTHfhX4NgARF1Q7C%2FTUkKUzz%2FmmiNCMtlPOl5bo%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750870103&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=pqcLrTHfhX4NgARF1Q7C%2FTUkKUzz%2FmmiNCMtlPOl5bo%3D
 1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
-1 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjc4ZDE4MTQyNDAwMTUyYjFjMTciLCJpYXQiOjE3NTA4Njk5MDF9.XaZoyn1WyU23bHHgRezKtLNrO37_XUyfp5dgPC0k57E; Max-Age=684; Path=/; Expires=Wed, 25 Jun 2025 16:56:25 GMT
+1 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4; Max-Age=684; Path=/; Expires=Wed, 25 Jun 2025 16:59:47 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 291
-1 &lt; Etag: W/&quot;123-I15whhHx8ldhNI+lpOVoXqTSzg8&quot;
-1 &lt; Date: Wed, 25 Jun 2025 16:45:01 GMT
+1 &lt; Content-Length: 286
+1 &lt; Etag: W/&quot;11e-VQ5/njH9deSbIA0s3ZkhszGLlWU&quot;
+1 &lt; Date: Wed, 25 Jun 2025 16:48:23 GMT
 1 &lt; Via: 1.1 vegur
-{&quot;user&quot;:{&quot;_id&quot;:&quot;685c278d18142400152b1c17&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;charley.cormier@hotmail.com&quot;,&quot;__v&quot;:1},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjc4ZDE4MTQyNDAwMTUyYjFjMTciLCJpYXQiOjE3NTA4Njk5MDF9.XaZoyn1WyU23bHHgRezKtLNrO37_XUyfp5dgPC0k57E&quot;}
+{&quot;user&quot;:{&quot;_id&quot;:&quot;685c28579a165800150ce0cf&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;levi.gerhold@yahoo.com&quot;,&quot;__v&quot;:1},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4&quot;}
 
 </div>   
 
@@ -548,7 +548,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.29">16:45:01.885 [print] ✅ Usuario registrado: charley.cormier@hotmail.com 
+  <div class="preformatted" data-parent="0.29">16:48:23.771 [print] ✅ Usuario registrado: levi.gerhold@yahoo.com 
 </div>   
 
   
@@ -600,7 +600,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">33</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;estebangonzalez888@hotmail.es&#39;, password: &#39;#(password)&#39; }</span>
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -631,7 +631,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">127</div>
   </div>
 
    
@@ -640,32 +640,32 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.34">16:45:01.887 request:
+  <div class="preformatted" data-parent="0.34">16:48:23.773 request:
 2 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users/login
-2 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjc4ZDE4MTQyNDAwMTUyYjFjMTciLCJpYXQiOjE3NTA4Njk5MDF9.XaZoyn1WyU23bHHgRezKtLNrO37_XUyfp5dgPC0k57E
+2 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 66
+2 &gt; Content-Length: 59
 2 &gt; Host: thinking-tester-contact-list.herokuapp.com
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;password&quot;:&quot;password123&quot;}
+{&quot;email&quot;:&quot;levi.gerhold@yahoo.com&quot;,&quot;password&quot;:&quot;password123&quot;}
 
-16:45:01.948 response time in milliseconds: 60
+16:48:23.898 response time in milliseconds: 124
 2 &lt; 200
 2 &lt; Server: Cowboy
-2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869901&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=ngBIflyjNNSwucAReI1%2FQWxpe58nj2DJPiYo8Jl36AA%3D&quot;}]}
-2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869901&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=ngBIflyjNNSwucAReI1%2FQWxpe58nj2DJPiYo8Jl36AA%3D
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750870103&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=pqcLrTHfhX4NgARF1Q7C%2FTUkKUzz%2FmmiNCMtlPOl5bo%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750870103&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=pqcLrTHfhX4NgARF1Q7C%2FTUkKUzz%2FmmiNCMtlPOl5bo%3D
 2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 2 &lt; Connection: keep-alive
 2 &lt; X-Powered-By: Express
-2 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDF9.AXYMf5KRr70qxv49SxZIiBbI0MXZgMREEy5Xfbsg1b0; Max-Age=36000; Path=/; Expires=Thu, 26 Jun 2025 02:45:01 GMT
+2 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4; Max-Age=36000; Path=/; Expires=Thu, 26 Jun 2025 02:48:23 GMT
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Content-Length: 293
-2 &lt; Etag: W/&quot;125-Achi6ETQ8hGH1FDQqbOAISX4OPM&quot;
-2 &lt; Date: Wed, 25 Jun 2025 16:45:01 GMT
+2 &lt; Content-Length: 286
+2 &lt; Etag: W/&quot;11e-LLXdT58WgvtQ27tisfsQ//voCvE&quot;
+2 &lt; Date: Wed, 25 Jun 2025 16:48:23 GMT
 2 &lt; Via: 1.1 vegur
-{&quot;user&quot;:{&quot;_id&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;__v&quot;:3},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDF9.AXYMf5KRr70qxv49SxZIiBbI0MXZgMREEy5Xfbsg1b0&quot;}
+{&quot;user&quot;:{&quot;_id&quot;:&quot;685c28579a165800150ce0cf&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;levi.gerhold@yahoo.com&quot;,&quot;__v&quot;:2},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4&quot;}
 
 </div>   
 
@@ -751,7 +751,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.37">16:45:01.950 [print] ✅ TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDF9.AXYMf5KRr70qxv49SxZIiBbI0MXZgMREEy5Xfbsg1b0 
+  <div class="preformatted" data-parent="0.37">16:48:23.901 [print] ✅ TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4 
 </div>   
 
   
@@ -778,7 +778,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def contact =</span>
       </div>
     </div>
-    <div class="time-cell passed">31</div>
+    <div class="time-cell passed">32</div>
   </div>
 
    
@@ -902,7 +902,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">39</div>
+    <div class="time-cell passed">105</div>
   </div>
 
    
@@ -911,32 +911,32 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.61">16:45:01.987 request:
+  <div class="preformatted" data-parent="0.61">16:48:23.934 request:
 3 &gt; POST https://thinking-tester-contact-list.herokuapp.com/contacts
-3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDF9.AXYMf5KRr70qxv49SxZIiBbI0MXZgMREEy5Xfbsg1b0
-3 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDF9.AXYMf5KRr70qxv49SxZIiBbI0MXZgMREEy5Xfbsg1b0
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4
+3 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4
 3 &gt; Content-Type: application/json; charset=UTF-8
-3 &gt; Content-Length: 281
+3 &gt; Content-Length: 270
 3 &gt; Host: thinking-tester-contact-list.herokuapp.com
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 3 &gt; Accept-Encoding: gzip,deflate
-{&quot;firstName&quot;:&quot;Carter&quot;,&quot;lastName&quot;:&quot;Glover&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;dee.blanda@hotmail.com&quot;,&quot;phone&quot;:&quot;536868393&quot;,&quot;street1&quot;:&quot;49333 Margert Valley&quot;,&quot;street2&quot;:&quot;Suite 290&quot;,&quot;city&quot;:&quot;New Cecilmouth&quot;,&quot;stateProvince&quot;:&quot;Ohio&quot;,&quot;postalCode&quot;:&quot;03224-2397&quot;,&quot;country&quot;:&quot;Virgin Islands, U.S.&quot;}
+{&quot;firstName&quot;:&quot;Christy&quot;,&quot;lastName&quot;:&quot;Kutch&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;rasheeda.mraz@gmail.com&quot;,&quot;phone&quot;:&quot;446788466&quot;,&quot;street1&quot;:&quot;958 Deckow Landing&quot;,&quot;street2&quot;:&quot;Suite 444&quot;,&quot;city&quot;:&quot;Haagville&quot;,&quot;stateProvince&quot;:&quot;New York&quot;,&quot;postalCode&quot;:&quot;42048&quot;,&quot;country&quot;:&quot;Christmas Island&quot;}
 
-16:45:02.021 response time in milliseconds: 33
+16:48:24.037 response time in milliseconds: 103
 3 &lt; 201
 3 &lt; Server: Cowboy
-3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D&quot;}]}
-3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D
+3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D&quot;}]}
+3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D
 3 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 3 &lt; Connection: keep-alive
 3 &lt; X-Powered-By: Express
 3 &lt; Content-Type: application/json; charset=utf-8
-3 &lt; Content-Length: 357
-3 &lt; Etag: W/&quot;165-/F2j6Bt8BDQRSDX1wx+9vgLKWgs&quot;
-3 &lt; Date: Wed, 25 Jun 2025 16:45:02 GMT
+3 &lt; Content-Length: 346
+3 &lt; Etag: W/&quot;15a-47xt6qq9EHb9jX5jKBqAO9t8UvM&quot;
+3 &lt; Date: Wed, 25 Jun 2025 16:48:24 GMT
 3 &lt; Via: 1.1 vegur
-{&quot;_id&quot;:&quot;685c278e18142400152b1c19&quot;,&quot;firstName&quot;:&quot;Carter&quot;,&quot;lastName&quot;:&quot;Glover&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;dee.blanda@hotmail.com&quot;,&quot;phone&quot;:&quot;536868393&quot;,&quot;street1&quot;:&quot;49333 Margert Valley&quot;,&quot;street2&quot;:&quot;Suite 290&quot;,&quot;city&quot;:&quot;New Cecilmouth&quot;,&quot;stateProvince&quot;:&quot;Ohio&quot;,&quot;postalCode&quot;:&quot;03224-2397&quot;,&quot;country&quot;:&quot;Virgin Islands, U.S.&quot;,&quot;owner&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;__v&quot;:0}
+{&quot;_id&quot;:&quot;685c285818142400152b1c21&quot;,&quot;firstName&quot;:&quot;Christy&quot;,&quot;lastName&quot;:&quot;Kutch&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;rasheeda.mraz@gmail.com&quot;,&quot;phone&quot;:&quot;446788466&quot;,&quot;street1&quot;:&quot;958 Deckow Landing&quot;,&quot;street2&quot;:&quot;Suite 444&quot;,&quot;city&quot;:&quot;Haagville&quot;,&quot;stateProvince&quot;:&quot;New York&quot;,&quot;postalCode&quot;:&quot;42048&quot;,&quot;country&quot;:&quot;Christmas Island&quot;,&quot;owner&quot;:&quot;685c28579a165800150ce0cf&quot;,&quot;__v&quot;:0}
 
 </div>   
 
@@ -1022,20 +1022,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.64">16:45:02.024 [print] ✅ Contacto creado: {
-  &quot;_id&quot;: &quot;685c278e18142400152b1c19&quot;,
-  &quot;firstName&quot;: &quot;Carter&quot;,
-  &quot;lastName&quot;: &quot;Glover&quot;,
+  <div class="preformatted" data-parent="0.64">16:48:24.040 [print] ✅ Contacto creado: {
+  &quot;_id&quot;: &quot;685c285818142400152b1c21&quot;,
+  &quot;firstName&quot;: &quot;Christy&quot;,
+  &quot;lastName&quot;: &quot;Kutch&quot;,
   &quot;birthdate&quot;: &quot;1999-10-12&quot;,
-  &quot;email&quot;: &quot;dee.blanda@hotmail.com&quot;,
-  &quot;phone&quot;: &quot;536868393&quot;,
-  &quot;street1&quot;: &quot;49333 Margert Valley&quot;,
-  &quot;street2&quot;: &quot;Suite 290&quot;,
-  &quot;city&quot;: &quot;New Cecilmouth&quot;,
-  &quot;stateProvince&quot;: &quot;Ohio&quot;,
-  &quot;postalCode&quot;: &quot;03224-2397&quot;,
-  &quot;country&quot;: &quot;Virgin Islands, U.S.&quot;,
-  &quot;owner&quot;: &quot;685c26ec9a165800150ce0be&quot;,
+  &quot;email&quot;: &quot;rasheeda.mraz@gmail.com&quot;,
+  &quot;phone&quot;: &quot;446788466&quot;,
+  &quot;street1&quot;: &quot;958 Deckow Landing&quot;,
+  &quot;street2&quot;: &quot;Suite 444&quot;,
+  &quot;city&quot;: &quot;Haagville&quot;,
+  &quot;stateProvince&quot;: &quot;New York&quot;,
+  &quot;postalCode&quot;: &quot;42048&quot;,
+  &quot;country&quot;: &quot;Christmas Island&quot;,
+  &quot;owner&quot;: &quot;685c28579a165800150ce0cf&quot;,
   &quot;__v&quot;: 0
 }
  
@@ -1121,7 +1121,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">31</div>
+    <div class="time-cell passed">103</div>
   </div>
 
    
@@ -1130,30 +1130,30 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.69">16:45:02.026 request:
+  <div class="preformatted" data-parent="0.69">16:48:24.042 request:
 4 &gt; GET https://thinking-tester-contact-list.herokuapp.com/contacts
-4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDF9.AXYMf5KRr70qxv49SxZIiBbI0MXZgMREEy5Xfbsg1b0
-4 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDF9.AXYMf5KRr70qxv49SxZIiBbI0MXZgMREEy5Xfbsg1b0
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4
+4 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1NzlhMTY1ODAwMTUwY2UwY2YiLCJpYXQiOjE3NTA4NzAxMDN9.a47ioFXQIbw0gk9D3nzgY-lHWrQ9Haiq7GaFSGptAL4
 4 &gt; Host: thinking-tester-contact-list.herokuapp.com
 4 &gt; Connection: Keep-Alive
 4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 4 &gt; Accept-Encoding: gzip,deflate
 
 
-16:45:02.054 response time in milliseconds: 28
+16:48:24.143 response time in milliseconds: 100
 4 &lt; 200
 4 &lt; Server: Cowboy
-4 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D&quot;}]}
-4 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D
+4 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D&quot;}]}
+4 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D
 4 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 4 &lt; Connection: keep-alive
 4 &lt; X-Powered-By: Express
 4 &lt; Content-Type: application/json; charset=utf-8
-4 &lt; Content-Length: 713
-4 &lt; Etag: W/&quot;2c9-aYZPI7jFTsFKJyDh2NAxL/JN5NI&quot;
-4 &lt; Date: Wed, 25 Jun 2025 16:45:02 GMT
+4 &lt; Content-Length: 348
+4 &lt; Etag: W/&quot;15c-PHf9B2g/dKpt7I3MmIO7dXUV/4o&quot;
+4 &lt; Date: Wed, 25 Jun 2025 16:48:24 GMT
 4 &lt; Via: 1.1 vegur
-[{&quot;_id&quot;:&quot;685c278e18142400152b1c19&quot;,&quot;firstName&quot;:&quot;Carter&quot;,&quot;lastName&quot;:&quot;Glover&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;dee.blanda@hotmail.com&quot;,&quot;phone&quot;:&quot;536868393&quot;,&quot;street1&quot;:&quot;49333 Margert Valley&quot;,&quot;street2&quot;:&quot;Suite 290&quot;,&quot;city&quot;:&quot;New Cecilmouth&quot;,&quot;stateProvince&quot;:&quot;Ohio&quot;,&quot;postalCode&quot;:&quot;03224-2397&quot;,&quot;country&quot;:&quot;Virgin Islands, U.S.&quot;,&quot;owner&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;685c26ec9a165800150ce0c0&quot;,&quot;firstName&quot;:&quot;Janiece&quot;,&quot;lastName&quot;:&quot;Schamberger&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;jeremiah.mraz@hotmail.com&quot;,&quot;phone&quot;:&quot;357848600&quot;,&quot;street1&quot;:&quot;884 Romaguera Shore&quot;,&quot;street2&quot;:&quot;Apt. 935&quot;,&quot;city&quot;:&quot;West Gabriella&quot;,&quot;stateProvince&quot;:&quot;Kansas&quot;,&quot;postalCode&quot;:&quot;13557-5673&quot;,&quot;country&quot;:&quot;Albania&quot;,&quot;owner&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;__v&quot;:0}]
+[{&quot;_id&quot;:&quot;685c285818142400152b1c21&quot;,&quot;firstName&quot;:&quot;Christy&quot;,&quot;lastName&quot;:&quot;Kutch&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;rasheeda.mraz@gmail.com&quot;,&quot;phone&quot;:&quot;446788466&quot;,&quot;street1&quot;:&quot;958 Deckow Landing&quot;,&quot;street2&quot;:&quot;Suite 444&quot;,&quot;city&quot;:&quot;Haagville&quot;,&quot;stateProvince&quot;:&quot;New York&quot;,&quot;postalCode&quot;:&quot;42048&quot;,&quot;country&quot;:&quot;Christmas Island&quot;,&quot;owner&quot;:&quot;685c28579a165800150ce0cf&quot;,&quot;__v&quot;:0}]
 
 </div>   
 
@@ -1259,7 +1259,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>199</span>
+              <span>ms:</span>&nbsp;<span>404</span>
             </div>
           </div>
           <div class="step-row">
@@ -1478,7 +1478,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomEmail = faker.internet().emailAddress()</span>
       </div>
     </div>
-    <div class="time-cell passed">33</div>
+    <div class="time-cell passed">29</div>
   </div>
 
    
@@ -1630,7 +1630,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">130</div>
   </div>
 
    
@@ -1639,7 +1639,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">16:45:02.109 request:
+  <div class="preformatted" data-parent="0.27">16:48:24.193 request:
 1 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users
 1 &gt; Accept: application/json
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1648,23 +1648,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;crystle.mraz@yahoo.com&quot;,&quot;password&quot;:&quot;password123&quot;}
+{&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;hiram.paucek@gmail.com&quot;,&quot;password&quot;:&quot;password123&quot;}
 
-16:45:02.166 response time in milliseconds: 55
+16:48:24.321 response time in milliseconds: 128
 1 &lt; 201
 1 &lt; Server: Cowboy
-1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D&quot;}]}
-1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D
 1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
-1 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjc4ZTE4MTQyNDAwMTUyYjFjMWEiLCJpYXQiOjE3NTA4Njk5MDJ9.CtjBu_P2pRXxGN2mRdHz4w3DcZ6mCdy3zhsKLIFckFI; Max-Age=684; Path=/; Expires=Wed, 25 Jun 2025 16:56:26 GMT
+1 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1ODlhMTY1ODAwMTUwY2UwZDEiLCJpYXQiOjE3NTA4NzAxMDR9.-aorqBWFO4CyMxv4m6QUEjAz5vQlh5wvqFEXgUgdPVg; Max-Age=684; Path=/; Expires=Wed, 25 Jun 2025 16:59:48 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 286
-1 &lt; Etag: W/&quot;11e-IeSJeveTiYWsis/g1Z1b5hTR6Oc&quot;
-1 &lt; Date: Wed, 25 Jun 2025 16:45:02 GMT
+1 &lt; Etag: W/&quot;11e-BbExIOEPKy7+BtQoUM34n8Y4U1o&quot;
+1 &lt; Date: Wed, 25 Jun 2025 16:48:24 GMT
 1 &lt; Via: 1.1 vegur
-{&quot;user&quot;:{&quot;_id&quot;:&quot;685c278e18142400152b1c1a&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;crystle.mraz@yahoo.com&quot;,&quot;__v&quot;:1},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjc4ZTE4MTQyNDAwMTUyYjFjMWEiLCJpYXQiOjE3NTA4Njk5MDJ9.CtjBu_P2pRXxGN2mRdHz4w3DcZ6mCdy3zhsKLIFckFI&quot;}
+{&quot;user&quot;:{&quot;_id&quot;:&quot;685c28589a165800150ce0d1&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;hiram.paucek@gmail.com&quot;,&quot;__v&quot;:1},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1ODlhMTY1ODAwMTUwY2UwZDEiLCJpYXQiOjE3NTA4NzAxMDR9.-aorqBWFO4CyMxv4m6QUEjAz5vQlh5wvqFEXgUgdPVg&quot;}
 
 </div>   
 
@@ -1722,7 +1722,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.29">16:45:02.167 [print] ✅ Usuario registrado: crystle.mraz@yahoo.com 
+  <div class="preformatted" data-parent="0.29">16:48:24.322 [print] ✅ Usuario registrado: hiram.paucek@gmail.com 
 </div>   
 
   
@@ -1774,7 +1774,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">33</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;estebangonzalez888@hotmail.es&#39;, password: &#39;#(password)&#39; }</span>
+        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1805,7 +1805,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">130</div>
   </div>
 
    
@@ -1814,32 +1814,32 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.34">16:45:02.169 request:
+  <div class="preformatted" data-parent="0.34">16:48:24.324 request:
 2 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users/login
-2 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjc4ZTE4MTQyNDAwMTUyYjFjMWEiLCJpYXQiOjE3NTA4Njk5MDJ9.CtjBu_P2pRXxGN2mRdHz4w3DcZ6mCdy3zhsKLIFckFI
+2 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1ODlhMTY1ODAwMTUwY2UwZDEiLCJpYXQiOjE3NTA4NzAxMDR9.-aorqBWFO4CyMxv4m6QUEjAz5vQlh5wvqFEXgUgdPVg
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 66
+2 &gt; Content-Length: 59
 2 &gt; Host: thinking-tester-contact-list.herokuapp.com
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;password&quot;:&quot;password123&quot;}
+{&quot;email&quot;:&quot;hiram.paucek@gmail.com&quot;,&quot;password&quot;:&quot;password123&quot;}
 
-16:45:02.220 response time in milliseconds: 51
+16:48:24.452 response time in milliseconds: 128
 2 &lt; 200
 2 &lt; Server: Cowboy
-2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D&quot;}]}
-2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D
 2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 2 &lt; Connection: keep-alive
 2 &lt; X-Powered-By: Express
-2 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDJ9.CNGwMIkIJHWFN2iUYp8T3ykvMuN6oMnwAF1HkaQGvEg; Max-Age=36000; Path=/; Expires=Thu, 26 Jun 2025 02:45:02 GMT
+2 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1ODlhMTY1ODAwMTUwY2UwZDEiLCJpYXQiOjE3NTA4NzAxMDR9.-aorqBWFO4CyMxv4m6QUEjAz5vQlh5wvqFEXgUgdPVg; Max-Age=36000; Path=/; Expires=Thu, 26 Jun 2025 02:48:24 GMT
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Content-Length: 293
-2 &lt; Etag: W/&quot;125-Gvm0eRxD59DYi672iIaiomCFQr0&quot;
-2 &lt; Date: Wed, 25 Jun 2025 16:45:02 GMT
+2 &lt; Content-Length: 286
+2 &lt; Etag: W/&quot;11e-D39jlJiboNC3h8vGv6YMU2PdpO8&quot;
+2 &lt; Date: Wed, 25 Jun 2025 16:48:24 GMT
 2 &lt; Via: 1.1 vegur
-{&quot;user&quot;:{&quot;_id&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;__v&quot;:4},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDJ9.CNGwMIkIJHWFN2iUYp8T3ykvMuN6oMnwAF1HkaQGvEg&quot;}
+{&quot;user&quot;:{&quot;_id&quot;:&quot;685c28589a165800150ce0d1&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;hiram.paucek@gmail.com&quot;,&quot;__v&quot;:2},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1ODlhMTY1ODAwMTUwY2UwZDEiLCJpYXQiOjE3NTA4NzAxMDR9.-aorqBWFO4CyMxv4m6QUEjAz5vQlh5wvqFEXgUgdPVg&quot;}
 
 </div>   
 
@@ -1925,7 +1925,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.37">16:45:02.221 [print] ✅ TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDJ9.CNGwMIkIJHWFN2iUYp8T3ykvMuN6oMnwAF1HkaQGvEg 
+  <div class="preformatted" data-parent="0.37">16:48:24.453 [print] ✅ TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1ODlhMTY1ODAwMTUwY2UwZDEiLCJpYXQiOjE3NTA4NzAxMDR9.-aorqBWFO4CyMxv4m6QUEjAz5vQlh5wvqFEXgUgdPVg 
 </div>   
 
   
@@ -1952,7 +1952,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def contact =</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -2087,7 +2087,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">34</div>
+    <div class="time-cell passed">98</div>
   </div>
 
    
@@ -2096,10 +2096,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.92">16:45:02.238 request:
+  <div class="preformatted" data-parent="0.92">16:48:24.465 request:
 3 &gt; POST https://thinking-tester-contact-list.herokuapp.com/contacts
-3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDJ9.CNGwMIkIJHWFN2iUYp8T3ykvMuN6oMnwAF1HkaQGvEg
-3 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk5MDJ9.CNGwMIkIJHWFN2iUYp8T3ykvMuN6oMnwAF1HkaQGvEg
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1ODlhMTY1ODAwMTUwY2UwZDEiLCJpYXQiOjE3NTA4NzAxMDR9.-aorqBWFO4CyMxv4m6QUEjAz5vQlh5wvqFEXgUgdPVg
+3 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjg1ODlhMTY1ODAwMTUwY2UwZDEiLCJpYXQiOjE3NTA4NzAxMDR9.-aorqBWFO4CyMxv4m6QUEjAz5vQlh5wvqFEXgUgdPVg
 3 &gt; Content-Type: application/json; charset=UTF-8
 3 &gt; Content-Length: 221
 3 &gt; Host: thinking-tester-contact-list.herokuapp.com
@@ -2108,18 +2108,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 3 &gt; Accept-Encoding: gzip,deflate
 {&quot;lastName&quot;:&quot;Test1023&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;user4521@test.com&quot;,&quot;phone&quot;:&quot;644332165&quot;,&quot;street1&quot;:&quot;Street 60&quot;,&quot;street2&quot;:&quot;Apt 73&quot;,&quot;city&quot;:&quot;City98&quot;,&quot;stateProvince&quot;:&quot;State31&quot;,&quot;postalCode&quot;:&quot;88150&quot;,&quot;country&quot;:&quot;Country0&quot;}
 
-16:45:02.269 response time in milliseconds: 31
+16:48:24.562 response time in milliseconds: 96
 3 &lt; 400
 3 &lt; Server: Cowboy
-3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D&quot;}]}
-3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869902&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=cXAsGyDzdBLT6hq2cnwepZWwi3GiYArwEibp7%2FnLXZc%3D
+3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D&quot;}]}
+3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750870104&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=tt5U9dMalET6dUBgyOV%2F7vq3Vv14YDyS0BvnWgGeHwo%3D
 3 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 3 &lt; Connection: keep-alive
 3 &lt; X-Powered-By: Express
 3 &lt; Content-Type: application/json; charset=utf-8
 3 &lt; Content-Length: 342
 3 &lt; Etag: W/&quot;156-SdwRjRz+JuEZO11uX75/Ayc9Ueg&quot;
-3 &lt; Date: Wed, 25 Jun 2025 16:45:02 GMT
+3 &lt; Date: Wed, 25 Jun 2025 16:48:24 GMT
 3 &lt; Via: 1.1 vegur
 {&quot;errors&quot;:{&quot;firstName&quot;:{&quot;name&quot;:&quot;ValidatorError&quot;,&quot;message&quot;:&quot;Path `firstName` is required.&quot;,&quot;properties&quot;:{&quot;message&quot;:&quot;Path `firstName` is required.&quot;,&quot;type&quot;:&quot;required&quot;,&quot;path&quot;:&quot;firstName&quot;},&quot;kind&quot;:&quot;required&quot;,&quot;path&quot;:&quot;firstName&quot;}},&quot;_message&quot;:&quot;Contact validation failed&quot;,&quot;message&quot;:&quot;Contact validation failed: firstName: Path `firstName` is required.&quot;}
 
