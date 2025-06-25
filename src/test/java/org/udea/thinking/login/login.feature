@@ -25,38 +25,38 @@ Feature: Login de usuario
     # No body expected in 401, so no match for response content
 
   Scenario: Reutilizar token JWT para obtener contactos
-  # Login
-  Given path loginUrl
-  And request { 
-    email: 'estebancossiogonzalez1@gmail.com', 
-    password: 'password123' 
-  }
-  When method POST
-  Then status 200
-  * def authToken = response.token
+    # Login
+    Given path loginUrl
+    And request { 
+      email: 'estebancossiogonzalez1@gmail.com', 
+      password: 'password123' 
+    }
+    When method POST
+    Then status 200
+    * def authToken = response.token
 
-  # Obtener contactos
-  Given path '/contacts'
-  And header Authorization = 'Bearer ' + authToken
-  When method GET
-  Then status 200
-  And match response == '#[0]' # Al menos un contacto registrado
-  And match response[0] == { 
-    _id: '#string',
-    firstName: '#string',
-    lastName: '#string',
-    birthdate: '#string',
-    email: '#string',
-    phone: '#string',
-    street1: '#string',
-    street2: '#string',
-    city: '#string',
-    stateProvince: '#string',
-    postalCode: '#string',
-    country: '#string',
-    owner: '#string',
-    __v: '#number'
-  }
+    # Obtener contactos
+    Given path '/contacts'
+    And header Authorization = 'Bearer ' + authToken
+    When method GET
+    Then status 200
+    And match response == '#[0]' # Al menos un contacto registrado
+    And match response[0] == { 
+      _id: '#string',
+      firstName: '#string',
+      lastName: '#string',
+      birthdate: '#string',
+      email: '#string',
+      phone: '#string',
+      street1: '#string',
+      street2: '#string',
+      city: '#string',
+      stateProvince: '#string',
+      postalCode: '#string',
+      country: '#string',
+      owner: '#string',
+      __v: '#number'
+    }
 
   Scenario: Login con campos vacíos
     Given path loginUrl
