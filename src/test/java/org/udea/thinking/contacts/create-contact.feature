@@ -11,17 +11,16 @@ Feature: Crear contacto vía API con datos dinámicos usando Faker
     * def faker = new Faker()
     * def randomEmail = faker.internet().emailAddress()
     * def password = 'password123'
-
     * def newUser = 
     """
     {
       "firstName": "Esteban",
       "lastName": "Cossio",
-      "email": "estebangonzalez888@hotmail.es",
-      "password": "password123"
+      "email": "#(randomEmail)",
+      "password": "#(password)"
     }
     """
-
+    
     # Registrar usuario
     Given path registerUrl
     And request newUser
