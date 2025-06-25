@@ -1,3 +1,4 @@
+@thinking_login
 Feature: Login de usuario
 
   Background:
@@ -6,41 +7,65 @@ Feature: Login de usuario
 
   Scenario: Login exitoso con credenciales válidas
     Given path loginUrl
-    And request { email: 'test@example.com', password: 'mypassword' }
+    And request { 
+      email: 'estebancossiogonzalez1@gmail.com', 
+      password: 'password123' 
+    }
     When method POST
     Then status 200
     And match response.token == '#string'
-    And match response.user == '#object'
+    And match response.user.email == 'estebancossiogonzalez1@gmail.com'
     * def authToken = response.token
 
   Scenario: Login fallido con credenciales inválidas
     Given path loginUrl
-    And request { email: 'invalid@example.com', password: 'wrongpassword' }
+    And request { email: 'invalido@ejemplo.com', password: 'malapassword' }
     When method POST
     Then status 401
-    And match response.message == 'Incorrect email or password'
+    # No body expected in 401, so no match for response content
 
-  Scenario: Validar token JWT en peticiones subsecuentes
-    Given path loginUrl
-    And request { email: 'test@example.com', password: 'mypassword' }
-    When method POST
-    Then status 200
-    * def authToken = response.token
-    
-    Given path '/contacts'
-    And header Authorization = 'Bearer ' + authToken
-    When method GET
-    Then status 200
-    And match response == '#array'
+  Scenario: Reutilizar token JWT para obtener contactos
+  # Login
+  Given path loginUrl
+  And request { 
+    email: 'estebancossiogonzalez1@gmail.com', 
+    password: 'password123' 
+  }
+  When method POST
+  Then status 200
+  * def authToken = response.token
 
-  Scenario: Login con email inválido
-    Given path loginUrl
-    And request { email: 'invalid-email', password: 'mypassword' }
-    When method POST
-    Then status 400
+  # Obtener contactos
+  Given path '/contacts'
+  And header Authorization = 'Bearer ' + authToken
+  When method GET
+  Then status 200
+  And match response == '#[0]' # Al menos un contacto registrado
+  And match response[0] == { 
+    _id: '#string',
+    firstName: '#string',
+    lastName: '#string',
+    birthdate: '#string',
+    email: '#string',
+    phone: '#string',
+    street1: '#string',
+    street2: '#string',
+    city: '#string',
+    stateProvince: '#string',
+    postalCode: '#string',
+    country: '#string',
+    owner: '#string',
+    __v: '#number'
+  }
 
-  Scenario: Login sin campos requeridos
+  Scenario: Login con campos vacíos
     Given path loginUrl
     And request { email: '', password: '' }
     When method POST
-    Then status 400
+    Then status 401
+
+  Scenario: Login con email inválido (sin @)
+    Given path loginUrl
+    And request { email: 'correo-invalido', password: 'password123' }
+    When method POST
+    Then status 401

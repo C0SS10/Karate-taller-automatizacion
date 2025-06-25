@@ -1,14 +1,20 @@
 function fn() {
-  var env = karate.env || "dev";
+  karate.configure("connectTimeout", 5000);
+  karate.configure("readTimeout", 5000);
+
+  var protocol = "https";
+  var server = "thinking-tester-contact-list.herokuapp.com";
+
+  if (karate.env == "local") {
+    protocol = "http";
+    server = "localhost:3000";
+  }
+
   var config = {
-    baseUrl: "https://thinking-tester-contact-list.herokuapp.com",
+    baseUrl: protocol + "://" + server,
   };
 
-  if (env === "dev") {
-    config.baseUrl = "https://thinking-tester-contact-list.herokuapp.com";
-  } else if (env === "test") {
-    config.baseUrl = "https://thinking-tester-contact-list.herokuapp.com";
-  }
+  config.faker = Java.type("com.github.javafaker.Faker");
 
   return config;
 }
