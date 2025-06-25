@@ -20,7 +20,7 @@ Feature: Crear contacto vía API con datos dinámicos usando Faker
       "password": "#(password)"
     }
     """
-    
+
     # Registrar usuario
     Given path registerUrl
     And request newUser
@@ -30,7 +30,7 @@ Feature: Crear contacto vía API con datos dinámicos usando Faker
 
     # Login con el nuevo usuario
     Given path loginUrl
-    And request { email: 'estebangonzalez888@hotmail.es', password: '#(password)' }
+    And request { email: '#(randomEmail)', password: '#(password)' }
     When method POST
     Then status 200
     * def authToken = response.token
