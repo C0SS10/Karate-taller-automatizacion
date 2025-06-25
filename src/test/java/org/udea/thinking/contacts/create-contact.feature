@@ -17,7 +17,7 @@ Feature: Crear contacto vía API con datos dinámicos usando Faker
     {
       "firstName": "Esteban",
       "lastName": "Cossio",
-      "email": "estebangonzalez888@gmail.com",
+      "email": "estebangonzalez888@hotmail.es",
       "password": "password123"
     }
     """
@@ -31,7 +31,7 @@ Feature: Crear contacto vía API con datos dinámicos usando Faker
 
     # Login con el nuevo usuario
     Given path loginUrl
-    And request { email: '#(randomEmail)', password: '#(password)' }
+    And request { email: 'estebangonzalez888@hotmail.es', password: '#(password)' }
     When method POST
     Then status 200
     * def authToken = response.token
