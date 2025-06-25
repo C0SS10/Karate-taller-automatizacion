@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.identify("9bef476f-9efa-4c2b-9e4c-1bdcd2541fdd",{name:"runner"});
+    posthog.identify("05364aaf-aa7f-4922-8a27-6d508242c07f",{name:"runner"});
     posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
   }
 });
@@ -39,8 +39,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">2</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -50,12 +50,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-06-25 04:39:57 PM</div>
+    <div>2025-06-25 04:42:20 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:58]"><span>[1:58]</span> <span>Crear contacto con token JWT y Faker</span></a>
           </div>
           <div class="nav-item failed">
@@ -84,8 +84,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>818</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>472</span>
             </div>
           </div>
           <div class="step-row">
@@ -276,7 +276,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def faker = new Faker()</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">28</div>
   </div>
 
    
@@ -304,7 +304,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomEmail = faker.internet().emailAddress()</span>
       </div>
     </div>
-    <div class="time-cell passed">147</div>
+    <div class="time-cell passed">145</div>
   </div>
 
    
@@ -368,7 +368,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="preformatted" data-parent="0.15">{
   &quot;firstName&quot;: &quot;Esteban&quot;,
   &quot;lastName&quot;: &quot;Cossio&quot;,
-  &quot;email&quot;: &quot;estebangonzalez888@gmail.com&quot;,
+  &quot;email&quot;: &quot;estebangonzalez888@hotmail.es&quot;,
   &quot;password&quot;: &quot;password123&quot;
 }</div>
 
@@ -456,7 +456,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">332</div>
+    <div class="time-cell passed">76</div>
   </div>
 
    
@@ -465,32 +465,32 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.28">16:39:56.948 request:
+  <div class="preformatted" data-parent="0.28">16:42:20.463 request:
 1 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users
 1 &gt; Accept: application/json
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 107
+1 &gt; Content-Length: 108
 1 &gt; Host: thinking-tester-contact-list.herokuapp.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@gmail.com&quot;,&quot;password&quot;:&quot;password123&quot;}
+{&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;password&quot;:&quot;password123&quot;}
 
-16:39:57.277 response time in milliseconds: 329
+16:42:20.537 response time in milliseconds: 73
 1 &lt; 201
 1 &lt; Server: Cowboy
-1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869597&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=LEZeTVJovd39%2BOYVIIEf%2FahxEaZ6GxbK%2Bx9inRV7VEQ%3D&quot;}]}
-1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869597&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=LEZeTVJovd39%2BOYVIIEf%2FahxEaZ6GxbK%2Bx9inRV7VEQ%3D
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D
 1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
-1 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjY1ZDE4MTQyNDAwMTUyYjFjMDYiLCJpYXQiOjE3NTA4Njk1OTd9.afJX1cp3PVV59ATUmWIF4FkbXasJorq8o_VXKrQZndI; Max-Age=684; Path=/; Expires=Wed, 25 Jun 2025 16:51:21 GMT
+1 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0; Max-Age=684; Path=/; Expires=Wed, 25 Jun 2025 16:53:44 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 292
-1 &lt; Etag: W/&quot;124-5oWJKfFSxZ4ogngz1MuqyBmpfrc&quot;
-1 &lt; Date: Wed, 25 Jun 2025 16:39:57 GMT
+1 &lt; Content-Length: 293
+1 &lt; Etag: W/&quot;125-lhPa8uHt+del+u7l8YVFHxyNZP4&quot;
+1 &lt; Date: Wed, 25 Jun 2025 16:42:20 GMT
 1 &lt; Via: 1.1 vegur
-{&quot;user&quot;:{&quot;_id&quot;:&quot;685c265d18142400152b1c06&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@gmail.com&quot;,&quot;__v&quot;:1},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjY1ZDE4MTQyNDAwMTUyYjFjMDYiLCJpYXQiOjE3NTA4Njk1OTd9.afJX1cp3PVV59ATUmWIF4FkbXasJorq8o_VXKrQZndI&quot;}
+{&quot;user&quot;:{&quot;_id&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;__v&quot;:1},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0&quot;}
 
 </div>   
 
@@ -548,7 +548,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.30">16:39:57.280 [print] ✅ Usuario registrado: estebangonzalez888@gmail.com 
+  <div class="preformatted" data-parent="0.30">16:42:20.539 [print] ✅ Usuario registrado: estebangonzalez888@hotmail.es 
 </div>   
 
   
@@ -600,7 +600,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">34</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(password)&#39; }</span>
+        <span>And</span>&nbsp;<span>request { email: &#39;estebangonzalez888@hotmail.es&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -631,7 +631,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">307</div>
+    <div class="time-cell passed">72</div>
   </div>
 
    
@@ -640,29 +640,32 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.35">16:39:57.282 request:
+  <div class="preformatted" data-parent="0.35">16:42:20.541 request:
 2 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users/login
-2 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjY1ZDE4MTQyNDAwMTUyYjFjMDYiLCJpYXQiOjE3NTA4Njk1OTd9.afJX1cp3PVV59ATUmWIF4FkbXasJorq8o_VXKrQZndI
+2 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0
 2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 56
+2 &gt; Content-Length: 66
 2 &gt; Host: thinking-tester-contact-list.herokuapp.com
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;ka.harber@gmail.com&quot;,&quot;password&quot;:&quot;password123&quot;}
+{&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;password&quot;:&quot;password123&quot;}
 
-16:39:57.587 response time in milliseconds: 305
-2 &lt; 401
+16:42:20.611 response time in milliseconds: 70
+2 &lt; 200
 2 &lt; Server: Cowboy
-2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869597&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=LEZeTVJovd39%2BOYVIIEf%2FahxEaZ6GxbK%2Bx9inRV7VEQ%3D&quot;}]}
-2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869597&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=LEZeTVJovd39%2BOYVIIEf%2FahxEaZ6GxbK%2Bx9inRV7VEQ%3D
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D
 2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 2 &lt; Connection: keep-alive
 2 &lt; X-Powered-By: Express
-2 &lt; Date: Wed, 25 Jun 2025 16:39:57 GMT
-2 &lt; Content-Length: 0
+2 &lt; Set-Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0; Max-Age=36000; Path=/; Expires=Thu, 26 Jun 2025 02:42:20 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 293
+2 &lt; Etag: W/&quot;125-4hM2OnvzPszR8gcRJJWw99YX0Ow&quot;
+2 &lt; Date: Wed, 25 Jun 2025 16:42:20 GMT
 2 &lt; Via: 1.1 vegur
-
+{&quot;user&quot;:{&quot;_id&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;__v&quot;:2},&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0&quot;}
 
 </div>   
 
@@ -679,11 +682,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.36">
       <div class="step-ref bg-step">36</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -692,12 +695,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.36">16:39:57.588 classpath:org/udea/thinking/contacts/create-contact.feature:36
-Then status 200
-status code was: 401, expected: 200, response time in milliseconds: 305, url: https://thinking-tester-contact-list.herokuapp.com/users/login, response: 
-
-classpath:org/udea/thinking/contacts/create-contact.feature:36
-</div>   
+     
 
   
 
@@ -712,11 +710,11 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
     <div class="step-container" id="0.37">
       <div class="step-ref bg-step">37</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def authToken = response.token</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -740,11 +738,11 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
     <div class="step-container" id="0.38">
       <div class="step-ref bg-step">38</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print &#39;✅ TOKEN:&#39;, authToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -753,7 +751,8 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   
 
-     
+  <div class="preformatted" data-parent="0.38">16:42:20.614 [print] ✅ TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0 
+</div>   
 
   
 
@@ -775,11 +774,11 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
     <div class="step-container" id="0.41">
       <div class="step-ref bg-step">41</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def contact =</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">33</div>
   </div>
 
    
@@ -813,13 +812,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.59">
-      <div class="step-ref skipped">59</div>
+      <div class="step-ref passed">59</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path contactsUrl</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -841,13 +840,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.60">
-      <div class="step-ref skipped">60</div>
+      <div class="step-ref passed">60</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -869,13 +868,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.61">
-      <div class="step-ref skipped">61</div>
+      <div class="step-ref passed">61</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request contact</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -897,13 +896,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.62">
-      <div class="step-ref skipped">62</div>
+      <div class="step-ref passed">62</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">53</div>
   </div>
 
    
@@ -912,7 +911,34 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   
 
-     
+  <div class="preformatted" data-parent="0.62">16:42:20.650 request:
+3 &gt; POST https://thinking-tester-contact-list.herokuapp.com/contacts
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0
+3 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 277
+3 &gt; Host: thinking-tester-contact-list.herokuapp.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstName&quot;:&quot;Janiece&quot;,&quot;lastName&quot;:&quot;Schamberger&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;jeremiah.mraz@hotmail.com&quot;,&quot;phone&quot;:&quot;357848600&quot;,&quot;street1&quot;:&quot;884 Romaguera Shore&quot;,&quot;street2&quot;:&quot;Apt. 935&quot;,&quot;city&quot;:&quot;West Gabriella&quot;,&quot;stateProvince&quot;:&quot;Kansas&quot;,&quot;postalCode&quot;:&quot;13557-5673&quot;,&quot;country&quot;:&quot;Albania&quot;}
+
+16:42:20.700 response time in milliseconds: 50
+3 &lt; 201
+3 &lt; Server: Cowboy
+3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D&quot;}]}
+3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D
+3 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 353
+3 &lt; Etag: W/&quot;161-uI8YIWU4LmuzOIuQetvEC1KKn5I&quot;
+3 &lt; Date: Wed, 25 Jun 2025 16:42:20 GMT
+3 &lt; Via: 1.1 vegur
+{&quot;_id&quot;:&quot;685c26ec9a165800150ce0c0&quot;,&quot;firstName&quot;:&quot;Janiece&quot;,&quot;lastName&quot;:&quot;Schamberger&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;jeremiah.mraz@hotmail.com&quot;,&quot;phone&quot;:&quot;357848600&quot;,&quot;street1&quot;:&quot;884 Romaguera Shore&quot;,&quot;street2&quot;:&quot;Apt. 935&quot;,&quot;city&quot;:&quot;West Gabriella&quot;,&quot;stateProvince&quot;:&quot;Kansas&quot;,&quot;postalCode&quot;:&quot;13557-5673&quot;,&quot;country&quot;:&quot;Albania&quot;,&quot;owner&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;__v&quot;:0}
+
+</div>   
 
   
 
@@ -925,13 +951,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.63">
-      <div class="step-ref skipped">63</div>
+      <div class="step-ref passed">63</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -953,13 +979,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.64">
-      <div class="step-ref skipped">64</div>
+      <div class="step-ref passed">64</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def contactId = response._id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -981,13 +1007,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.65">
-      <div class="step-ref skipped">65</div>
+      <div class="step-ref passed">65</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print &#39;✅ Contacto creado:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -996,7 +1022,24 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   
 
-     
+  <div class="preformatted" data-parent="0.65">16:42:20.704 [print] ✅ Contacto creado: {
+  &quot;_id&quot;: &quot;685c26ec9a165800150ce0c0&quot;,
+  &quot;firstName&quot;: &quot;Janiece&quot;,
+  &quot;lastName&quot;: &quot;Schamberger&quot;,
+  &quot;birthdate&quot;: &quot;1999-10-12&quot;,
+  &quot;email&quot;: &quot;jeremiah.mraz@hotmail.com&quot;,
+  &quot;phone&quot;: &quot;357848600&quot;,
+  &quot;street1&quot;: &quot;884 Romaguera Shore&quot;,
+  &quot;street2&quot;: &quot;Apt. 935&quot;,
+  &quot;city&quot;: &quot;West Gabriella&quot;,
+  &quot;stateProvince&quot;: &quot;Kansas&quot;,
+  &quot;postalCode&quot;: &quot;13557-5673&quot;,
+  &quot;country&quot;: &quot;Albania&quot;,
+  &quot;owner&quot;: &quot;685c26ec9a165800150ce0be&quot;,
+  &quot;__v&quot;: 0
+}
+ 
+</div>   
 
   
 
@@ -1016,13 +1059,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.68">
-      <div class="step-ref skipped">68</div>
+      <div class="step-ref passed">68</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path contactsUrl</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1044,13 +1087,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.69">
-      <div class="step-ref skipped">69</div>
+      <div class="step-ref passed">69</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1072,13 +1115,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.70">
-      <div class="step-ref skipped">70</div>
+      <div class="step-ref passed">70</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">47</div>
   </div>
 
    
@@ -1087,7 +1130,32 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   
 
-     
+  <div class="preformatted" data-parent="0.70">16:42:20.706 request:
+4 &gt; GET https://thinking-tester-contact-list.herokuapp.com/contacts
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0
+4 &gt; Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVjMjZlYzlhMTY1ODAwMTUwY2UwYmUiLCJpYXQiOjE3NTA4Njk3NDB9.cc86rSVgVAwc6bPGyE7ttVeFJxTzNhzt5hGFJm5IFM0
+4 &gt; Host: thinking-tester-contact-list.herokuapp.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+16:42:20.751 response time in milliseconds: 44
+4 &lt; 200
+4 &lt; Server: Cowboy
+4 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D&quot;}]}
+4 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D
+4 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+4 &lt; Connection: keep-alive
+4 &lt; X-Powered-By: Express
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Content-Length: 355
+4 &lt; Etag: W/&quot;163-lzfUUaqXIcpyekvHWeFBegO1J9Y&quot;
+4 &lt; Date: Wed, 25 Jun 2025 16:42:20 GMT
+4 &lt; Via: 1.1 vegur
+[{&quot;_id&quot;:&quot;685c26ec9a165800150ce0c0&quot;,&quot;firstName&quot;:&quot;Janiece&quot;,&quot;lastName&quot;:&quot;Schamberger&quot;,&quot;birthdate&quot;:&quot;1999-10-12&quot;,&quot;email&quot;:&quot;jeremiah.mraz@hotmail.com&quot;,&quot;phone&quot;:&quot;357848600&quot;,&quot;street1&quot;:&quot;884 Romaguera Shore&quot;,&quot;street2&quot;:&quot;Apt. 935&quot;,&quot;city&quot;:&quot;West Gabriella&quot;,&quot;stateProvince&quot;:&quot;Kansas&quot;,&quot;postalCode&quot;:&quot;13557-5673&quot;,&quot;country&quot;:&quot;Albania&quot;,&quot;owner&quot;:&quot;685c26ec9a165800150ce0be&quot;,&quot;__v&quot;:0}]
+
+</div>   
 
   
 
@@ -1100,13 +1168,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.71">
-      <div class="step-ref skipped">71</div>
+      <div class="step-ref passed">71</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1128,13 +1196,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.72">
-      <div class="step-ref skipped">72</div>
+      <div class="step-ref passed">72</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def found = response.find(x =&gt; x._id == contactId)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1156,13 +1224,13 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   <div class="step-row">
     <div class="step-container" id="0.73">
-      <div class="step-ref skipped">73</div>
+      <div class="step-ref passed">73</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>assert found != null</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1191,7 +1259,7 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>364</span>
+              <span>ms:</span>&nbsp;<span>97</span>
             </div>
           </div>
           <div class="step-row">
@@ -1354,7 +1422,7 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
         <span>*</span>&nbsp;<span>def Faker = Java.type(&#39;com.github.javafaker.Faker&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1382,7 +1450,7 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
         <span>*</span>&nbsp;<span>def faker = new Faker()</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1410,7 +1478,7 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
         <span>*</span>&nbsp;<span>def randomEmail = faker.internet().emailAddress()</span>
       </div>
     </div>
-    <div class="time-cell passed">32</div>
+    <div class="time-cell passed">28</div>
   </div>
 
    
@@ -1474,7 +1542,7 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
   <div class="preformatted" data-parent="0.15">{
   &quot;firstName&quot;: &quot;Esteban&quot;,
   &quot;lastName&quot;: &quot;Cossio&quot;,
-  &quot;email&quot;: &quot;estebangonzalez888@gmail.com&quot;,
+  &quot;email&quot;: &quot;estebangonzalez888@hotmail.es&quot;,
   &quot;password&quot;: &quot;password123&quot;
 }</div>
 
@@ -1562,7 +1630,7 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">327</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -1571,29 +1639,29 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   
 
-  <div class="preformatted" data-parent="0.28">16:39:57.642 request:
+  <div class="preformatted" data-parent="0.28">16:42:20.802 request:
 1 &gt; POST https://thinking-tester-contact-list.herokuapp.com/users
 1 &gt; Accept: application/json
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 107
+1 &gt; Content-Length: 108
 1 &gt; Host: thinking-tester-contact-list.herokuapp.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_452)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@gmail.com&quot;,&quot;password&quot;:&quot;password123&quot;}
+{&quot;firstName&quot;:&quot;Esteban&quot;,&quot;lastName&quot;:&quot;Cossio&quot;,&quot;email&quot;:&quot;estebangonzalez888@hotmail.es&quot;,&quot;password&quot;:&quot;password123&quot;}
 
-16:39:57.967 response time in milliseconds: 324
+16:42:20.864 response time in milliseconds: 61
 1 &lt; 400
 1 &lt; Server: Cowboy
-1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869597&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=LEZeTVJovd39%2BOYVIIEf%2FahxEaZ6GxbK%2Bx9inRV7VEQ%3D&quot;}]}
-1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869597&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=LEZeTVJovd39%2BOYVIIEf%2FahxEaZ6GxbK%2Bx9inRV7VEQ%3D
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750869740&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=%2B5KQe3T4nxhEVJglbGT1pUc66Mi41oTBxzqDsbx0xmk%3D
 1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 45
 1 &lt; Etag: W/&quot;2d-UStF8qUL2UQr7lNfRS7v2APIKHk&quot;
-1 &lt; Date: Wed, 25 Jun 2025 16:39:57 GMT
+1 &lt; Date: Wed, 25 Jun 2025 16:42:20 GMT
 1 &lt; Via: 1.1 vegur
 {&quot;message&quot;:&quot;Email address is already in use&quot;}
 
@@ -1625,9 +1693,9 @@ classpath:org/udea/thinking/contacts/create-contact.feature:36
 
   
 
-  <div class="preformatted" data-parent="0.29">16:39:57.968 classpath:org/udea/thinking/contacts/create-contact.feature:29
+  <div class="preformatted" data-parent="0.29">16:42:20.865 classpath:org/udea/thinking/contacts/create-contact.feature:29
 Then status 201
-status code was: 400, expected: 201, response time in milliseconds: 324, url: https://thinking-tester-contact-list.herokuapp.com/users, response: 
+status code was: 400, expected: 201, response time in milliseconds: 61, url: https://thinking-tester-contact-list.herokuapp.com/users, response: 
 {&quot;message&quot;:&quot;Email address is already in use&quot;}
 classpath:org/udea/thinking/contacts/create-contact.feature:29
 </div>   
@@ -1709,7 +1777,7 @@ classpath:org/udea/thinking/contacts/create-contact.feature:29
       <div class="step-ref bg-step">34</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>request { email: &#39;#(randomEmail)&#39;, password: &#39;#(password)&#39; }</span>
+        <span>And</span>&nbsp;<span>request { email: &#39;estebangonzalez888@hotmail.es&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
