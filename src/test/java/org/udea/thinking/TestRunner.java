@@ -6,8 +6,7 @@ class TestRunner {
 
   @Karate.Test
   Karate test01_ThinkingLogin() {
-    return Karate.run()
-        .tags("@thinking_login")
+    return Karate.run("/login/login")
         .relativeTo(getClass())
         .outputCucumberJson(true);
   }
