@@ -5,17 +5,46 @@ Feature: Crear contacto vía API con datos dinámicos usando Faker
     * url baseUrl
     * header Accept = 'application/json'
     * def contactsUrl = '/contacts'
+    * def registerUrl = '/users'
     * def loginUrl = '/users/login'
     * def Faker = Java.type('com.github.javafaker.Faker')
     * def faker = new Faker()
     * def randomEmail = faker.internet().emailAddress()
+    * def password = 'password123'
+
+    * def newUser = 
+    """
+    {
+      "firstName": "Esteban",
+      "lastName": "Cossio",
+      "email": "estebangonzalez888@gmail.com",
+      "password": "password123"
+    }
+    """
+
+    # Registrar usuario
+    Given path registerUrl
+    And request newUser
+    When method POST
+    Then status 201
+    * print '✅ Usuario registrado:', newUser.email
+
+    # Login con el nuevo usuario
+    Given path loginUrl
+    And request { email: '#(randomEmail)', password: '#(password)' }
+    When method POST
+    Then status 200
+    * def authToken = response.token
+    * print '✅ TOKEN:', authToken
+
+    # Definir datos del contacto
     * def contact = 
     """
     {
       "firstName": "#(faker.name().firstName())",
       "lastName": "#(faker.name().lastName())",
       "birthdate": "1999-10-12",
-      "email": "#(randomEmail)",
+      "email": "#(faker.internet().emailAddress())",
       "phone": "#(faker.phoneNumber().subscriberNumber(9))",
       "street1": "#(faker.address().streetAddress())",
       "street2": "#(faker.address().secondaryAddress())",
@@ -27,21 +56,13 @@ Feature: Crear contacto vía API con datos dinámicos usando Faker
     """
 
   Scenario: Crear contacto con token JWT y Faker
-    #Login
-    Given path loginUrl
-    And request {email: 'estebancossiogonzalez1@gmail.com', password: 'password123'}
-    When method POST
-    Then status 200
-    * def authToken = response.token
-    * print 'TOKEN EN CREATE CONTACT:', authToken
-
     Given path contactsUrl
     And header Authorization = 'Bearer ' + authToken
     And request contact
     When method POST
     Then status 201
     * def contactId = response._id
-    * print 'Contacto creado:', response
+    * print '✅ Contacto creado:', response
 
     # Validar que el contacto fue creado
     Given path contactsUrl
