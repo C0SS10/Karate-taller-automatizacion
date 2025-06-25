@@ -11,4 +11,11 @@ class TestRunner {
         .outputCucumberJson(true);
   }
 
+  @Karate.Test
+  Karate test02_ThinkingCreateContact() {
+    return Karate.run("contacts/create-contact")
+        .relativeTo(getClass())
+        .outputCucumberJson(true);
+  }
+
 }

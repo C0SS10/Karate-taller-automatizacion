@@ -5,6 +5,7 @@ Feature: Login de usuario
     * url baseUrl
     * header Accept = 'application/json'
     * def loginUrl = '/users/login'
+    * def loginOut = '/users/logout'
 
   Scenario: Reutilizar token JWT para obtener contactos
     Given path loginUrl
@@ -26,3 +27,9 @@ Feature: Login de usuario
     And request {email:'invalido@ejemplo.com', password:'malapassword'}
     When method POST
     Then status 401
+
+  Scenario: Cerrar sesión
+    Given path loginOut
+    And header Authorization = 'Bearer ' + authToken
+    When method POST
+    Then status 200
